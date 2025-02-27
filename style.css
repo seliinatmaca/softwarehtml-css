@@ -1,193 +1,193 @@
 :root {
-  --maincolor: #669cf5;
-  --background: #35424a;
+  /* Ana renk ve arka plan renklerini global olarak tanımlar */
+  --maincolor: #669cf5; /* Ana renk olarak mavi (#669CF5) belirleniyor */
+  --background: #35424a; /* Arka plan rengi olarak koyu yeşil (#35424A) belirleniyor */
 }
 
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  /* HTML ve body elementlerinin temel stilini tanımlar */
+  height: 100%; /* Sayfanın yüksekliğini %100 yapar */
+  margin: 0; /* Sayfa kenar boşluğunu sıfırlar */
+  padding: 0; /* Sayfanın iç boşluklarını sıfırlar */
 }
 
 body {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
+  /* Body için özel stil tanımlamaları */
+  font-size: 15px; /* Yazı tipinin boyutunu 15px olarak ayarlar */
+  font-family: Arial, Helvetica, sans-serif; /* Yazı tipini Arial veya Helvetica olarak belirler */
+  line-height: 1.5; /* Satır yüksekliğini 1.5 yaparak satırlar arasını açar */
+  background-color: #f4f4f4; /* Arka plan rengini açık gri (#F4F4F4) yapar */
+  display: flex; /* Flexbox düzeni kullanır */
+  flex-direction: column; /* Öğelerin dikey olarak sıralanmasını sağlar */
 }
 
 .container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  flex: 1;
+  /* Sayfa içeriğinin bulunduğu kapsayıcı için stil tanımlar */
+  width: 80%; /* Kapsayıcının genişliğini sayfa genişliğinin %80'i kadar yapar */
+  margin: auto; /* Kapsayıcıyı sayfa ortasında hizalar */
+  overflow: hidden; /* Kapsayıcı dışına taşan öğeleri gizler */
+  flex: 1; /* Kapsayıcıyı esnek yapar, boş alanı doldurmasını sağlar */
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  /* Liste öğelerinin stilini tanımlar */
+  margin: 0; /* Listeyi dış kenar boşluğundan sıfırlar */
+  padding: 0; /* Listeyi iç boşluktan sıfırlar */
 }
 
 header {
-  background-color: var(--background);
-  color: #fff;
-  min-height: 70px;
-  padding-top: 30px;
-  border-bottom: var(--maincolor) 3px solid;
+  /* Header (üst bilgi) için stil tanımlamaları */
+  background-color: var(
+    --background
+  ); /* Header'ın arka plan rengini koyu yeşil yapar */
+  color: #fff; /* Header'daki metin rengini beyaz yapar */
+  min-height: 70px; /* Header'ın minimum yüksekliğini 70px olarak belirler */
+  padding-top: 30px; /* Header'ın üst kısmına 30px iç boşluk ekler */
+  border-bottom: var(--maincolor) 3px solid; /* Header'ın altına 3px kalınlığında mavi bir sınır çizer */
 }
 
 header a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+  /* Header'daki bağlantılar için stil tanımlar */
+  color: #fff; /* Bağlantılar için metin rengini beyaz yapar */
+  text-decoration: none; /* Bağlantıların altını çizmeyi kaldırır */
+  text-transform: uppercase; /* Bağlantı metnini büyük harflerle yazar */
 }
 
 header ul {
-  list-style-type: none;
+  /* Header'daki ul (liste) öğelerinin stilini tanımlar */
+  list-style-type: none; /* Liste madde işaretlerini kaldırır */
 }
 
 header li {
-  float: left;
-  display: inline;
-  padding: 0 20px;
+  /* Header'daki her bir liste öğesi için stil tanımlar */
+  float: left; /* Liste öğelerini sola hizalar */
+  display: inline; /* Liste öğelerini yatayda sıralar */
+  padding: 0 20px; /* Liste öğelerinin sağ ve sol kenarlarına 20px boşluk ekler */
 }
 
 header #branding {
-  float: left;
+  /* Header'daki logo için stil tanımlar */
+  float: left; /* Logo öğesini sola hizalar */
 }
 
 header #branding h1 {
-  margin: 0;
+  /* Logo başlığı için stil tanımlar */
+  margin: 0; /* Başlık etrafındaki boşlukları sıfırlar */
 }
 
 header nav {
-  float: right;
-  margin-top: 10px;
+  /* Header'daki navigasyon menüsü için stil tanımlar */
+  float: right; /* Menüyü sağa hizalar */
+  margin-top: 10px; /* Menüye 10px üst boşluk ekler */
 }
 
 header .highlight,
 header .current a {
-  color: var(--maincolor);
-  font-weight: bold;
+  /* Vurgulanan (aktif) bağlantılar için stil tanımlar */
+  color: var(--maincolor); /* Vurgulanan bağlantının rengini mavi yapar */
+  font-weight: bold; /* Vurgulanan bağlantıyı kalın yapar */
 }
 
 #showcase {
-  background: url(/img/showcase.jpg) no-repeat 0 -400px;
-  min-height: 400px;
-  text-align: center;
-  color: #fff;
+  /* Tanıtım alanı (Showcase) için stil tanımlar */
+  background: url(/img/showcase.jpg) no-repeat 0 -400px; /* Arka plana bir resim ekler ve konumunu ayarlar */
+  min-height: 400px; /* Showcase bölümünün minimum yüksekliğini 400px yapar */
+  text-align: center; /* Metni ortalar */
+  color: #fff; /* Metin rengini beyaz yapar */
 }
 
 #showcase h1 {
-  font-size: 55px;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  /* Showcase başlığı için stil tanımlar */
+  font-size: 55px; /* Başlık font boyutunu 55px yapar */
+  margin-top: 100px; /* Başlığın üst kısmına 100px boşluk ekler */
+  margin-bottom: 10px; /* Başlığın alt kısmına 10px boşluk ekler */
 }
 
 #showcase p {
-  font-size: 20px;
+  /* Showcase açıklaması için stil tanımlar */
+  font-size: 20px; /* Açıklamanın font boyutunu 20px yapar */
 }
 
 #newsletter {
-  background: var(--background);
-  color: #fff;
-  padding: 15px;
+  /* Bülten alanı için stil tanımlar */
+  background: var(--background); /* Arka planı koyu yeşil yapar */
+  color: #fff; /* Metin rengini beyaz yapar */
+  padding: 15px; /* İçeride 15px boşluk bırakır */
 }
 
 #newsletter h1 {
-  float: left;
+  /* Bülten başlığı için stil tanımlar */
+  float: left; /* Başlığı sola hizalar */
 }
 
 #newsletter form {
-  float: right;
-  margin-top: 15px;
+  /* Bülten formu için stil tanımlar */
+  float: right; /* Formu sağa hizalar */
+  margin-top: 15px; /* Formun üst kısmına 15px boşluk ekler */
 }
 
 #newsletter input {
-  height: 25px;
-  width: 250px;
-  padding: 4px;
+  /* Bülten formundaki input alanı için stil tanımlar */
+  height: 25px; /* Input alanının yüksekliğini 25px yapar */
+  width: 250px; /* Input alanının genişliğini 250px yapar */
+  padding: 4px; /* Input alanının iç boşluğunu 4px yapar */
 }
 
 .button_1 {
-  height: 40px;
-  background: var(--maincolor);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  padding: 0 20px;
-}
-
-#boxes {
-  margin-top: 20px;
+  /* Buton için stil tanımlar */
+  height: 40px; /* Butonun yüksekliğini 40px yapar */
+  background: var(--maincolor); /* Butonun arka planını mavi yapar */
+  border: 0; /* Butonun kenarlarını kaldırır */
+  border-radius: 5px; /* Butonun köşelerini yuvarlatır */
+  color: #fff; /* Buton metnini beyaz yapar */
+  padding: 0 20px; /* Butonun sağ ve sol kenarlarına 20px boşluk ekler */
 }
 
 #boxes .box {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  text-align: center;
+  /* Kutular için stil tanımlar */
+  float: left; /* Kutuları sola hizalar */
+  width: 30%; /* Kutuların genişliğini %30 yapar */
+  padding: 10px; /* Kutulara iç boşluk ekler */
+  text-align: center; /* Kutuların içeriğini ortalar */
 }
 
 #boxes .box img {
-  width: 90px;
+  /* Kutulardaki resimler için stil tanımlar */
+  width: 90px; /* Resimlerin genişliğini 90px yapar */
 }
 
 footer {
-  background: var(--maincolor);
-  padding: 20px;
-  color: #fff;
-  text-align: center;
-  margin-top: auto;
+  /* Footer (alt bilgi) için stil tanımlar */
+  background: var(--maincolor); /* Footer'ın arka plan rengini mavi yapar */
+  padding: 20px; /* İçeride 20px boşluk bırakır */
+  color: #fff; /* Metin rengini beyaz yapar */
+  text-align: center; /* Metni ortalar */
+  margin-top: auto; /* Footer'ı sayfanın alt kısmına iter */
 }
 
 .dark {
-  background-color: var(--background);
-  padding: 15px;
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* Koyu tema için stil tanımlar */
+  background-color: var(--background); /* Arka plan rengini koyu yeşil yapar */
+  padding: 15px; /* İç boşluğu 15px yapar */
+  color: #fff; /* Metin rengini beyaz yapar */
+  margin-top: 10px; /* Üst kısmına 10px boşluk ekler */
+  margin-bottom: 10px; /* Alt kısmına 10px boşluk ekler */
 }
 
 aside#sidebar {
-  float: right;
-  width: 30%;
-  margin-top: 10px;
+  /* Yan panel (sidebar) için stil tanımlar */
+  float: right; /* Sidebar'ı sağa hizalar */
+  width: 30%; /* Sidebar'ın genişliğini %30 yapar */
+  margin-top: 10px; /* Üst kısmına 10px boşluk ekler */
 }
 
-article#main-col {
-  float: left;
-  width: 60%;
+aside#sidebar ul {
+  /* Sidebar'daki liste öğeleri için stil tanımlar */
+  list-style-type: none; /* Liste madde işaretlerini kaldırır */
 }
 
-aside#sidebar .quote input,
-aside#sidebar .quote textarea {
-  width: 90%;
-  padding: 5px;
-}
-
-ul#services li {
-  background-color: #e6e6e6;
-  border: #ccc solid 1px;
-  list-style: none;
-  padding: 20px;
-  margin-bottom: 5px;
-}
-
-@media (max-width: 768px) {
-  header #branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article#main-col,
-  aside#sidebar {
-    text-align: center;
-    width: 100%;
-    float: none;
-  }
+aside#sidebar li {
+  /* Sidebar'daki her bir liste öğesi için stil tanımlar */
+  margin-bottom: 10px; /* Liste öğesinin altına 10px boşluk ekler */
 }
